@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>949</width>
+    <height>712</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>連絡先一覧</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>891</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>新しい行</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>氏名</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>フリガナ</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>種別</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>会社名</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>住所</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>電話番号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>携帯</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fax</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Email</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>test</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>650</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_shinki">
+       <property name="text">
+        <string>新規 (F1)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_henshuu">
+       <property name="text">
+        <string>編集 (F2)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_sakujo">
+       <property name="text">
+        <string>削除 (F3)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_close">
+       <property name="text">
+        <string>終了 (F4)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>連絡先一覧</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_close</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>deleteLater()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>919</x>
+     <y>659</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>542</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

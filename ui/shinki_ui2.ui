@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>203</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>新規登録</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>9</y>
+     <width>401</width>
+     <height>158</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="2">
+     <widget class="QComboBox" name="comboBox">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <item>
+       <property name="text">
+        <string>取引先</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>家族</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>友人</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLineEdit" name="lineEdit_furigana">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="cursorPosition">
+       <number>0</number>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::LogicalMoveStyle</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="lineEdit_name">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="cursorPosition">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLabel" name="label_Email">
+      <property name="text">
+       <string>Email:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLineEdit" name="lineEdit_company">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="cursorPosition">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2" colspan="4">
+     <widget class="QLineEdit" name="lineEdit_address">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="QLineEdit" name="lineEdit_Email">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhEmailCharactersOnly</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLineEdit" name="lineEdit_mobile">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhFormattedNumbersOnly</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLineEdit" name="lineEdit_phone">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhFormattedNumbersOnly</set>
+      </property>
+      <property name="cursorPosition">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="lineEdit_Fax">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhFormattedNumbersOnly</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_furigana">
+      <property name="text">
+       <string>フリガナ:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_address">
+      <property name="text">
+       <string>住所</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_Fax">
+      <property name="text">
+       <string>Fax:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLabel" name="label_mobile">
+      <property name="text">
+       <string>携帯:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="label_company">
+      <property name="text">
+       <string>会社名:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_phone">
+      <property name="text">
+       <string>電話番号:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_shubetsu">
+      <property name="text">
+       <string>種別:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_name">
+      <property name="text">
+       <string>氏名:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>lineEdit_furigana</zorder>
+   <zorder>label_address</zorder>
+   <zorder>label_Fax</zorder>
+   <zorder>label_mobile</zorder>
+   <zorder>label_company</zorder>
+   <zorder>label_phone</zorder>
+   <zorder>label_shubetsu</zorder>
+   <zorder>lineEdit_name</zorder>
+   <zorder>label_name</zorder>
+   <zorder>label_Email</zorder>
+   <zorder>label_furigana</zorder>
+   <zorder>lineEdit_Fax</zorder>
+   <zorder>lineEdit_phone</zorder>
+   <zorder>lineEdit_mobile</zorder>
+   <zorder>lineEdit_company</zorder>
+   <zorder>lineEdit_Email</zorder>
+   <zorder>lineEdit_address</zorder>
+   <zorder>comboBox</zorder>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>160</y>
+     <width>160</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_OK">
+      <property name="text">
+       <string>OK (F1)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_Cancel">
+      <property name="text">
+       <string>Cancel (F2)</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_name</tabstop>
+  <tabstop>lineEdit_furigana</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>lineEdit_company</tabstop>
+  <tabstop>lineEdit_address</tabstop>
+  <tabstop>lineEdit_phone</tabstop>
+  <tabstop>lineEdit_mobile</tabstop>
+  <tabstop>lineEdit_Fax</tabstop>
+  <tabstop>lineEdit_Email</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>lineEdit_name</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEdit_furigana</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>activated(QString)</signal>
+   <receiver>lineEdit_company</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>61</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_company</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEdit_address</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>358</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_address</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEdit_phone</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_phone</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEdit_mobile</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>314</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_mobile</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEdit_Fax</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>167</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_Fax</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEdit_Email</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_Email</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEdit_name</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>87</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>373</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>219</x>
+     <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_furigana</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEdit_company</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>51</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_OK</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>false</bool>
+  </property>
+ </designerdata>
+</ui>
